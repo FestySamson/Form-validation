@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="form-all">
+            <h3>Create Account</h3>
+            <form action="g.html" id="form">
+                <div class="inputs">
+                    
+                    <input type="text" name="username" id="user" placeholder="Username">
+                    <span><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                    <span><i class="fas fa-exclamation-circle" aria-hidden="true"></i></span>
+                    <small>Error message</small>
+                </div>
+                <div class="inputs">
+                    
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                    <span><i class="fas fa-exclamation-circle" aria-hidden="true"></i></span>
+                    <small>Error message</small>
+                </div>
+                <div class="inputs">
+                    
+                    <input type="password" name="password1" id="password1" placeholder="Password">
+                    <span><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                    <span><i class="fas fa-exclamation-circle" aria-hidden="true"></i></span>
+                    <small>Error message</small>
+                </div>
+                <div class="inputs">
+                    
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+                    <span><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                    <span><i class="fas fa-exclamation-circle" aria-hidden="true"></i></span>
+                    <small>Error message</small>
+                </div>
+                <p id="suc"></p>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+</html>

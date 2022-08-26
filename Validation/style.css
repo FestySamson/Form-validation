@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-all{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+   /* background-color: tomato;*/
+}
+.form-all h3{
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: tomato;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.inputs{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.inputs label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.inputs input{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid tomato;
+}
+.inputs input:focus{
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+}
+.inputs input:focus::placeholder{
+    /*ackground-color: tomato;*/
+    color: white;
+    border: none;
+}
+.inputs span{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    /* visibility: hidden; */
+    display: none;
+}
+.inputs.success input{
+    border: 2px solid rgb(8, 170, 116);
+}
+.inputs.error input{
+    border: 2px solid rgb(240, 56, 56);
+}
+.inputs.success span:first-of-type{
+    color: rgb(8, 170, 116);
+    display: block;
+    /* visibility: visible; */
+}
+.inputs.error span:nth-of-type(2){
+    color: rgb(240, 56, 56);
+    display: block;
+   /*  visibility: visible; */
+}
+.inputs.inputs.error small{
+    color: rgb(240, 56, 56);
+    visibility: visible;
+}
+.inputs small{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    visibility: hidden;
+}
+.form-all button{
+    width: 100%;
+    padding: 10px;
+    background-color: tomato;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#suc{
+    margin: 10px 0;
+    font-family: sans-serif;
+    text-align: center;
+}
